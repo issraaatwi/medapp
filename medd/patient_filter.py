@@ -6,6 +6,13 @@ class Patient:
         self.gender = gender
         self.primary_phone = primary_phone
 
+# Create a list of patient instances (more than 50 patients)
+patients = [
+    Patient("John", "Robert", "Doe", "Male", "123-456-7890"),
+    Patient("Jane", "Marie", "Smith", "Female", "987-654-3210"),
+    # ... (add more patients here)
+]
+
 def filter_patients(patients):
     filtered_patients = []
 
@@ -24,12 +31,6 @@ def filter_patients(patients):
             filtered_patients.append(patient)
 
     return filtered_patients
-
-patients = [
-    Patient("John", "Robert", "Doe", "Male", "123-456-7890"),
-    Patient("Jane", "Marie", "Smith", "Female", "987-654-3210"),
-    Patient("Michael", "James", "Johnson", "Male", "555-123-4567"),
-]
 
 # Call the filter_patients function with the list of patient instances
 filtered_patients = filter_patients(patients)
